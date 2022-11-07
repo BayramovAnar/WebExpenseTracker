@@ -2,11 +2,38 @@
 
 {% block content %}
 
-<div class="card">
-    <div class="card-body">
-        <h1>Register</h1>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="card mt-5">
+
+
+            <div class="card-body">
+                <div class="card-title py-1">
+                <h4>Registration Form</h4>
+                </div>
+                 <form action="" method="post">
+                    <div class="form-group py-1">
+                        <input type="text" name="username" id="usernameField" class="form-control form-control-sm" placeholder="Username">
+                    </div>
+
+                    <div class="form-group py-1">
+                         <input type="email" name="email" id="emailField" class="form-control form-control-sm" placeholder="Email">
+                    </div>
+
+                    <div class="form-group py-1">
+                        <input type="password" name="password" id="passwordField" class="form-control form-control-sm" placeholder="Password">
+                        <small class="float-end py-2">SHOW</small>
+                    </div>
+                     <div class="py-2"></div>
+                    <input type="submit" value="Register" class="btn btn-group btn-block btn-dark">
+                </form>
+            </div>
+        </div>
     </div>
+    <div class="col-md-4"></div>
 </div>
+
 {% endblock content %}
 
 
