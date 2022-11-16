@@ -4,6 +4,7 @@ import json
 from django.http import JsonResponse
 from django.contrib.auth.models import User
 
+
 class UsernameValidationView(View):
     def post(self, request):
         data = json.loads(request.body)
